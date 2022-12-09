@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Hello!</title>
+    <title>Maniscalco Lab 10</title>
 
     <!-- import the webpage's stylesheet -->
     <link
@@ -42,13 +42,13 @@
     <div class="row">
       <div class="column">
         <label for="group-by">Group By</label>
-        <select id="group-by">
-          <option value="stores">Stores worldwide</option>
-				  <option value="revenue">Revenue in billion U.S. dollars</option>
+        <select id="group-by" aria-label="Dropdown menu to select bar chart metric" >
+          <option value="stores" aria-label="Stores worldwide selected">Stores worldwide</option>
+				  <option value="revenue" aria-label="Revenue in billion U.S. dollars selected">Revenue in billion U.S. dollars</option>
         </select>      
       </div>
       <div class="column">
-        <div id="sort-btn" class="button button-outline">
+        <div id="sort-btn" class="button button-outline" tabindex="0" role="button" aria-label="Press enter to sort bars in ascending/descending order.">
           <i class="fas fa-sort"></i> Sort  
         </div>        
       </div>
